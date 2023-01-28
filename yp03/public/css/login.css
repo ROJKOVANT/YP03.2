@@ -1,0 +1,240 @@
+body{
+    background-color: #181E30;
+    font-family: 'Nunito';
+}
+.card-header{
+    display: flex;
+    justify-content: center;
+    color: #F3F7FF;
+    font-size: 2vw;
+    font-family: 'Nunito';
+    font-style: normal;
+    margin-top: 7vw;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+label{
+    font-size: 0.9vw;
+    color: #F3F7FF;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border: #7850BA 1px solid;
+    border-radius: 10px;
+    outline: none;
+    width: 20vw;
+    height: 1.5vw;
+    color: #F3F7FF;
+    font-size: 0.8vw;
+    padding: 5px;
+    padding-left: 1vw;
+    margin-bottom: 1.5vw;
+    margin-top: 0.5vw;
+    font-family: 'Nunito';
+
+}
+input::placeholder{
+    color: #798093;
+}
+.btn_auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    text-decoration: none;
+    background-color: transparent;
+    color: #F3F7FF;
+    border: #7850BA 1px solid;
+    border-radius: 10px;
+    width: 30vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    font-family: 'Nunito';
+    letter-spacing: 2.2px;
+    text-align: center;
+}
+button:hover{
+    background: #7850BA;
+    color: #F3F7FF;
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+    margin-top: 1.5vw;
+    color: #F3F7FF;
+    font-family: 'Nunito';
+    font-size: 1vw;
+}
+a:hover{
+    color: #7850BA;
+}
+li{
+    list-style: none;
+    margin-top: 1.5vw;
+}
+li a{
+    color: #F3F7FF;
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-size: 1vw;
+}
+li a:hover{
+    color: #7850BA;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+html{
+    height: 60vw;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: 'Fonts1';
+    src: url('/fonts/Raleway-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Fonts2';
+    src: url('/fonts/SourceSans3-Regular.ttf');
+}
+
+body{
+    background-color: #181E30;
+}
+
+.logo_img{
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+    width: 8vw;
+    height: 8vw;
+}
+
+.logo_h1{
+    margin-top: -8vw;
+    text-align: center;
+    font-family: 'Fonts1';
+    font-weight: 100;
+    color: #F3F7FF;
+    font-size: 2.6vw;
+}
+
+.block_registr{
+    margin-top: 1vw;
+    margin-left: 11vw;
+    width: 78vw;
+    height: 40vw;
+    background-color: #13192C;
+    border: solid 2px #7850BA;
+    border-radius: 3vw;
+}
+
+.block_registr_reg{
+    margin-top: 7.5vw;
+    margin-left: 8.2vw;
+    color: #F3F7FF;
+    font-family: 'Fonts1';
+    font-weight: 100;
+    font-size: 2.2vw;
+}
+
+
+.block_registr_log{
+    margin-top: -2.6vw;
+    margin-left: 38vw;
+    color: #F3F7FF;
+    font-family: 'Fonts1';
+    font-weight: 100;
+    font-size: 2.2vw;
+}
+
+.block_registr_log {
+    padding-bottom: 0.3vw;
+    width: 13.5vw;
+    border-radius: 0.1vw;
+    text-decoration: none;
+    background-image: linear-gradient(#7850BA, #7850BA);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.block_registr_log:hover {
+    background-size: 100% 2px;
+}
+
+.input_name{
+    color: #F3F7FF;
+    font-size: 1.4vw;
+    font-family: 'Fonts1';
+    padding-left: 1vw;
+    outline: none;
+    margin-top: 4.2vw;
+    margin-left: 8.2vw;
+    border-radius: 0.6vw;
+    background-color: #13192C;
+    width: 56.8vw;
+    height: 3vw;
+    border: solid 1px #7850BA;
+}
+
+input::placeholder{
+    color: #798093;
+}
+
+.input_parol{
+    color: #F3F7FF;
+    font-size: 1.4vw;
+    font-family: 'Fonts1';
+    padding-left: 1vw;
+    outline: none;
+    margin-top: 2.7vw;
+    margin-left: 8.2vw;
+    border-radius: 0.6vw;
+    background-color: #13192C;
+    width: 56.8vw;
+    height: 3vw;
+    border: solid 1px #7850BA;
+}
+
+.reg_button{
+    margin-left: 8.2vw;
+    margin-top: 10vw;
+}
+
+.button{
+    color: #F3F7FF;
+    padding: 0.6vw 24.8vw;
+    font-family: 'Fonts1';
+    font-size: 2vw;
+    border-radius: 1vw;
+    border: solid 1px #7850BA;
+    transition: 500ms ease-in-out;
+}
+.reg_button a:hover{
+    background-color: #7850BA;
+}
+
+.p_soglashenie{
+    margin-top: 2vw;
+    text-align: center;
+    margin-left: 17vw;
+    color: #798093;
+    width: 38vw;
+    font-family: 'Fonts1';
+    font-size: 1.2vw;
+}

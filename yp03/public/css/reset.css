@@ -1,0 +1,54 @@
+body{
+    background-color: #181E30;
+    font-family: 'Nunito';
+    color: #F3F7FF;
+}
+.card-header{
+    margin-bottom: 2vw;
+}
+label{
+     font-size: 1.2vw;
+     color: #F3F7FF;
+ }
+input{
+    background-color: transparent;
+    border: none;
+    border: #7850BA 1px solid;
+    border-radius: 10px;
+    outline: none;
+    width: 20vw;
+    height: 1.5vw;
+    color: #F3F7FF;
+    font-size: 1.2vw;
+    padding: 5px;
+    padding-left: 1vw;
+    margin-bottom: 1.5vw;
+    margin-top: 1vw;
+    font-family: 'Nunito';
+
+}
+input::placeholder{
+    color: #798093;
+}
+.btn_reset{
+    display: flex;
+    align-items: center;
+}
+button{
+    text-decoration: none;
+    background-color: transparent;
+    color: #F3F7FF;
+    border: #7850BA 1px solid;
+    border-radius: 10px;
+    width: 21.5vw;
+    height: 2.6vw;
+    font-size: 0.8vw;
+    font-family: 'Nunito';
+    letter-spacing: 2.2px;
+    text-align: center;
+}
+button:hover{
+    background: #7850BA;
+    color: #F3F7FF;
+    transition: 2s;
+}
