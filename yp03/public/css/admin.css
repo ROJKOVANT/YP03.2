@@ -308,17 +308,6 @@ input::placeholder {
     margin-top: 1vw;
     margin-left: 2vw;
 }
-
-.div_lenta2{
-    margin-top: 2vw;
-    border-radius: 2vw;
-    width: 25vw;
-    height: auto;
-    margin-left: 30.6vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-}
-
 .text_lenta{
     margin-top: 1vw;
     margin-left: 2vw;
@@ -348,4 +337,26 @@ input::placeholder {
 
 .otstuppp {
     height: 67.5vw;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 31vw;
+    gap: 2vw;
+}
+.div_1{
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    padding: 0.5vw 3vw;
+    background-color: #13192c;
+    border: 1px solid #7850ba;
+}
+.div_2{
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    padding: 0.5vw 3vw;
+    background-color: #13192c;
+    border: 1px solid #7850ba;
 }

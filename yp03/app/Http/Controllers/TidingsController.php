@@ -172,7 +172,7 @@ class TidingsController extends Controller
         $tiding = Tiding::withTrashed()->where('id', $id)->first();
         $tiding->restore();
 
-        return redirect()->route('tidings');
+        return redirect()->back();
     }
 //    public function searchTiding(Request $request){
 //        $s = $request->s;

@@ -186,7 +186,7 @@
     <!-- Пост -->
     <div class="otstup">
         @if(!$tidings->count())
-            <p>Пользователь еще ничего не опубликовал!</p>
+            <p>Пока еще ничего не опубликовано!</p>
         @else
             @foreach($tidings as $tiding)
                 <div class="post">
@@ -197,9 +197,19 @@
                     <p class="title_p">{{$tiding->title}}</p>
                     <p class="title_p">{{$tiding->content}}</p>
                     <img class="post_img" src="/{{$tiding->picture}}" alt="{{$tiding->title}}">
+                    <div class="links">
+                        <li>
+                            <a href="{{route('tiding.edit', ['id'=> $tiding->id])}}" style="color: white">Изменить пост</a>
+                        </li>
+                        <li>
+                            <a href="{{route('tiding.delete', ['id'=> $tiding->id])}}" style="color: white">Удалить пост</a>
+                        </li>
+                    </div>
+
                 </div>
             @endforeach
         @endif
     </div>
+            <div class="otstuppp"></div>
     </body>
 @endsection

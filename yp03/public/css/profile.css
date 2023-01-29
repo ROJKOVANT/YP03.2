@@ -576,7 +576,7 @@ header {
     background-color: #13192c;
     border: 1px solid #7850ba;
     width: 32.8vw;
-    height: 38vw;
+    height: 39vw;
 }
 
 .post_icon {
@@ -705,4 +705,14 @@ header {
 }
 .btn-accept:hover {
     background-color: #7850ba;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+.otstuppp {
+    height: 10vw;
 }

@@ -13,11 +13,3 @@
         </div>
     </div>
 </body>
-
-{{--     <div class="media">--}}
-{{--            <img src="{{$user->avatar}}" class="mr-3"  alt="">--}}
-{{--            <div class="media-body">--}}
-{{--                <a href="{{route('profile.index', ['name' => $user->name]) }}">{{$user->name}}</a>--}}
-{{--                <p>Город : {{$user->city}}</p>--}}
-{{--            </div>--}}
-{{--    </div>--}}

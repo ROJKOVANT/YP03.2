@@ -5,7 +5,6 @@
     list-style-type: none;
     background-repeat: no-repeat;
 }
-
 html {
     overflow-x: hidden;
 }
@@ -81,9 +80,6 @@ body {
     margin-right: 3.6vw;
 }
 
-.navigation5{
-    margin-right: 3vw;
-}
 
 .nav_img1 {
     width: 2.4vw;
@@ -214,173 +210,39 @@ input::placeholder {
     color: #798093;
 }
 
-.button_novosti{
-    margin-top: -2vw;
-    margin-left: 30.5vw;
-    width: 2vw;
-    height: 2vw;
-}
-
-.novostii{
-    border-radius: 1vw;
-    font-family: "Fonts1";
-    font-size: 1.2vw;
-    padding: 0.6vw 6vw;
-    color: #f3f7ff;
-    width: 2vw;
-    height: 2vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-    transition: 500ms ease-in-out;
-}
-.button_novosti a:hover{
-    background-color: #7850ba;
-}
-
-.button_categoria{
-    margin-top: -2vw;
-    margin-left: 50vw;
-    width: 2vw;
-    height: 2vw;
-}
-
-.categoria{
-    border-radius: 1vw;
-    font-family: "Fonts1";
-    font-size: 1.2vw;
-    padding: 0.6vw 6vw;
-    color: #f3f7ff;
-    width: 2vw;
-    height: 2vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-    transition: 500ms ease-in-out;
-}
-.button_categoria a:hover{
-    background-color: #7850ba;
-}
 
 .div_lenta{
-    margin-top: 2vw;
-    border-radius: 2vw;
-    width: 46.8vw;
-    height: 47.5vw;
-    margin-left: 30.6vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-}
-
-.icon_lenta{
-    margin-left: 2vw;
-    margin-top: 1.5vw;
-    width: 4.5vw;
-    height: 4.5vw;
-}
-
-.h1_lenta{
-    margin-top: -4.4vw;
-    margin-left: 8vw;
-    color: #f3f7ff;
-    font-family: 'Fonts1';
-    font-size: 1.4vw;
-    font-weight: 100;
-}
-
-.p_lenta{
-    margin-top: 0.8vw;
-    margin-left: 8vw;
-    color: #f3f7ff;
-    font-family: 'Fonts1';
-    font-size: 1vw;
-    font-weight: 100;
-}
-
-.hr_lenta{
-    margin-left: 2vw;
-    margin-top: 1.4vw;
-    border: 1px solid #7850ba;
-    width: 42.5vw;
-}
-
-.post_lenta{
-    height: 38vw;
-    width: 42.5vw;
-    margin-top: 1vw;
-    margin-left: 2vw;
-}
-
-.div_lenta2{
-    margin-top: 2vw;
-    border-radius: 2vw;
-    width: 46.8vw;
-    height: 49.5vw;
-    margin-left: 30.6vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-}
-
-.text_lenta{
-    margin-top: 1vw;
-    margin-left: 2vw;
-    color: #f3f7ff;
-    font-family: 'Fonts1';
-    font-size: 1vw;
-}
-
-.right_block{
-    margin-top: -99vw;
-    margin-left: 79vw;
-    width: 18vw;
-    height: 18vw;
-}
-
-.right_block2{
-    margin-top: 2vw;
-    margin-left: 79vw;
-    width: 14vw;
-    height: 14vw;
-}
-
-.img_piar{
-    width: 18vw;
-    height: 18vw;
-}
-
-.otstuppp {
-    height: 67.5vw;
-}
-
-/*Панель профиль*/
-.upProfile{
     display: flex;
-    margin: 0vw 5vw 2vw 32vw;
-    width: auto;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    width: 46.8vw;
     height: auto;
+    margin-left: 30.6vw;
+    background-color: #13192c;
+    border: 1px solid #7850ba;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
-table {
-    background: none;
-    border-collapse: collapse;
+.div_lenta  > h1{
+    padding-top: 2vw;
+    color: white;
+}
+.create{
+    display: flex;
+    height: auto;
     width: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
-td,
-th {
-    padding: 1vw;
-    border: 1px solid #7850ba;
-    overflow: hidden;
-    text-align: left;
-    vertical-align: middle;
-    color: white;
-}
-th {
-    background-color: #181e30;
-    border: 1px solid #7850ba;
-    font-weight: 400;
-}
-th a,
-td a {
-    display: block;
-    width: 100%;
-    color: white;
+.error{
+    color: red;
+    font-size: 1vw;
+    padding-top: 1vw;
 }
 form{
     margin-top: 0.5vw;
@@ -404,6 +266,32 @@ input{
 input::placeholder {
     color: #798093;
 }
+textarea{
+    background-color: #13192c;
+    outline: none;
+    color: #f3f7ff;
+    border: 1px solid #7850ba;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    margin-bottom: 0.5vw;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+}
+select{
+    background-color: #13192c;
+    outline: none;
+    color: #f3f7ff;
+    border: 1px solid #7850ba;
+    margin-top: 0.5vw;
+    width: auto;
+    padding: 0.3vw;
+    border-radius: 0.25vw;
+}
+select::after{
+    background-color: #13192c;
+    color: #f3f7ff;
+    border: 1px solid #7850ba;
+}
 button{
     position: relative;
     outline: none;
@@ -424,4 +312,9 @@ button::placeholder {
 button:hover{
     background-color: #7850BA;
 }
+option{
 
+}
+.otstuppp {
+    height: 2vw;
+}

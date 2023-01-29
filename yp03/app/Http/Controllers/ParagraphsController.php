@@ -44,7 +44,7 @@ class ParagraphsController extends Controller
         $paragraph->name = $request->name;
         $paragraph->save();
 
-        return redirect()->back();
+        return redirect()->route('paragraphs');
 
 //        dd($request->all());
     }
