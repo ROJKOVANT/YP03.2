@@ -44,7 +44,7 @@
         <a class="novostii" href="">Новости</a>
     </div>
     <div class="button_categoria">
-        <a class="categoria" href="{{ route('paragraphs') }}">Категории</a>
+        <a class="categoria" href="">Категории</a>
     </div>
     @foreach($tidings as $tiding)
     <div class="div_lenta2">
@@ -52,6 +52,7 @@
             <img class="icon_lenta" style="border-radius: 50px;" src="{{Auth::user()->avatar}}" alt="">
             <h1 class="h1_lenta" href="{{ route('profile.index', ['name'=> $tiding->user->name]) }}">{{ $tiding->user->name }}</h1>
             <p class="p_lenta">{{ $tiding->created_at->diffForHumans()}}</p>
+            <p class="p_lenta">{{$tiding->paragraph_id}}</p>
             <hr class="hr_lenta">
             <p class="text_lenta">{{$tiding->title}}</p>
             <p class="text_lenta">{{$tiding->content}}</p>

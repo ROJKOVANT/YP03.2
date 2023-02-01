@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Paragraph;
+use App\Http\Controllers\ParagraphsController;
 use Illuminate\Http\Request;
 use App\Models\Tiding;
 use Auth;
@@ -28,7 +29,6 @@ class TidingsController extends Controller
     public function index()
     {
         return view('tidings.index')->with('tidings', Tiding::all());
-
     }
 
     /**
