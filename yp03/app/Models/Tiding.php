@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
-
+use App\Models\Paragraph;
 
 
 use Illuminate\Database\Eloquent\Model;
@@ -39,7 +39,7 @@ class Tiding extends Model
     }
 
     public function paragraph(){
-        return $this->belongsTo('App\Paragraph');
+        return $this->belongsTo('App\Models\Paragraph', 'paragraph_id');
     }
     public function user(){
         return $this->belongsTo('App\Models\User', 'user_id');

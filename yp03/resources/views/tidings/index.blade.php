@@ -40,52 +40,65 @@
             </form>
         </div>
     </div>
-    <div class="button_novosti">
-        <a class="novostii" href="">Новости</a>
+{{--    <div class="button_novosti">--}}
+{{--       --}}
+{{--    </div>--}}
+    @php
+        $news = \App\Models\Paragraph::all();
+    @endphp
+    <div class="categoria">
+        <a class="novostii" href="http://127.0.0.1:8000/tidings">Новости</a>
+        @foreach($news as $paragraph)
+            <a class="novostii" href="http://127.0.0.1:8000/tidings/{{$paragraph->id}}">{{$paragraph->name}}</a>
+        @endforeach
     </div>
-    <div class="button_categoria">
-        <a class="categoria" href="">Категории</a>
-    </div>
-    @foreach($tidings as $tiding)
-    <div class="div_lenta2">
-        <div>
-            <img class="icon_lenta" style="border-radius: 50px;" src="{{Auth::user()->avatar}}" alt="">
-            <h1 class="h1_lenta" href="{{ route('profile.index', ['name'=> $tiding->user->name]) }}">{{ $tiding->user->name }}</h1>
-            <p class="p_lenta">{{ $tiding->created_at->diffForHumans()}}</p>
-            <p class="p_lenta">{{$tiding->paragraph_id}}</p>
-            <hr class="hr_lenta">
-            <p class="text_lenta">{{$tiding->title}}</p>
-            <p class="text_lenta">{{$tiding->content}}</p>
-            <img class="post_lenta" style="height: 475px; border-radius: 25px;" src="{{$tiding->picture}}" alt="{{$tiding->title}}">
-        </div>
-        <hr class="hr_lenta">
-        <div class="comments">
 
-            <p>Коментарии:</p>
-            @foreach($tiding->comments as $comment)
-                <div class="comments_1">
-                    <h4><a href="{{ route('profile.index', ['name'=> $comment->user->name]) }}" style="color: white;">{{$comment->user->name}}</a></h4>
-                    <p>{{$comment->body}}</p>
-                </div>
-            @endforeach
+    @if(!$tidings)
+        <div class="div_lenta2">
+            <p class="p_lenta">Новостей нет</p>
         </div>
-        <form method="POST" action="/tiding/{id}/stores">
-            @csrf
-            <br>
-            <input type="hidden" name="tiding_slug" value="{{ $tiding->slug }}">
-            <br>
-            <div style="display: flex; flex-direction: column;">
-                <label for="">Оставьте коментарий</label>
-                <br>
-                <textarea name="body" id="body" rows="2" placeholder="Оставьте коментарий"></textarea>
+    @else
+        @foreach($tidings as $tiding)
+            <div class="div_lenta2">
+                <div>
+                    <img class="icon_lenta" style="border-radius: 50px;" src="{{Auth::user()->avatar}}" alt="">
+                    <h1 class="h1_lenta"><a href="{{ route('profile.index', ['name'=> $tiding->user->name]) }} "style="color: white;">{{ $tiding->user->name }}</a></h1>
+                    <p class="p_lenta">{{ $tiding->created_at->diffForHumans()}}</p>
+                    <p class="p_lenta">{{$tiding->paragraph->name}}</p>
+                    <hr class="hr_lenta">
+                    <p class="text_lenta">{{$tiding->title}}</p>
+                    <p class="text_lenta">{{$tiding->content}}</p>
+                    <img class="post_lenta" style="height: 475px; border-radius: 25px;" src="/{{$tiding->picture}}" alt="{{$tiding->title}}">
+                </div>
+                <hr class="hr_lenta">
+                <div class="comments">
+
+                    <p>Коментарии:</p>
+                    @foreach($tiding->comments as $comment)
+                        <div class="comments_1">
+                            <h4><a href="{{ route('profile.index', ['name'=> $comment->user->name]) }}" style="color: white;">{{$comment->user->name}}</a></h4>
+                            <p>{{$comment->body}}</p>
+                        </div>
+                    @endforeach
+                </div>
+                <form method="POST" action="/tiding/{id}/stores">
+                    @csrf
+                    <br>
+                    <input type="hidden" name="tiding_slug" value="{{ $tiding->slug }}">
+                    <br>
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="">Оставьте коментарий</label>
+                        <br>
+                        <textarea name="body" id="body" rows="2" placeholder="Оставьте коментарий"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">Отправить коментарий</button>
+                    </div>
+                </form>
             </div>
-            <br>
-            <div>
-                <button type="submit">Отправить коментарий</button>
-            </div>
-        </form>
-    </div>
-    @endforeach
+        @endforeach
+    @endif
     <div class="right_block">
         <a href="https://www.youtube.com/?hl=RU"><img class="img_piar" src="/img/реклама_ютуб.png" alt=""></a>
     </div>

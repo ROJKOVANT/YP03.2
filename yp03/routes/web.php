@@ -77,7 +77,7 @@ Route::post('/post',[\App\Http\Controllers\PostController::class, 'postPost'])
 
 
 /*посты Tidings*/
-Route::get('/tidings', [App\Http\Controllers\TidingsController::class, 'index'])->name('tidings');
+Route::get('/tidings/{id}', [App\Http\Controllers\TidingsController::class, 'index'])->name('tidings');
 Route::get('/tidings', [App\Http\Controllers\AdminController::class, 'index'])->name('tidings');
 Route::get('/tiding/trashed', [App\Http\Controllers\TidingsController::class, 'trashed'])->name('tiding.trashed');
 Route::get('/tiding/hdelete/{id}', [App\Http\Controllers\TidingsController::class, 'hdelete'])->name('tiding.hdelete');

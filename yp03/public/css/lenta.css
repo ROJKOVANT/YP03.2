@@ -218,13 +218,13 @@ input::placeholder {
 }
 
 .novostii{
-    border-radius: 1vw;
+    border-radius: 0.5vw;
     font-family: "Fonts1";
     font-size: 1.2vw;
-    padding: 0.6vw 6vw;
+    padding: 0.3vw 1vw;
     color: #f3f7ff;
-    width: 2vw;
-    height: 2vw;
+    width: auto;
+    height: auto;
     background-color: #13192c;
     border: 1px solid #7850ba;
     transition: 500ms ease-in-out;
@@ -232,28 +232,12 @@ input::placeholder {
 .button_novosti a:hover{
     background-color: #7850ba;
 }
-
-.button_categoria{
-    margin-top: -2vw;
-    margin-left: 50vw;
-    width: 2vw;
-    height: 2vw;
-}
-
 .categoria{
-    border-radius: 1vw;
-    font-family: "Fonts1";
-    font-size: 1.2vw;
-    padding: 0.6vw 6vw;
-    color: #f3f7ff;
-    width: 2vw;
-    height: 2vw;
-    background-color: #13192c;
-    border: 1px solid #7850ba;
-    transition: 500ms ease-in-out;
-}
-.button_categoria a:hover{
-    background-color: #7850ba;
+    display: flex;
+    margin-left: 31vw;
+    gap: 1vw 1vw;
+    width: 46vw;
+    flex-wrap: wrap;
 }
 
 .div_lenta{

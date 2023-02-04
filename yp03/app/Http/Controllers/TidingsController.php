@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Paragraph;
 use App\Http\Controllers\ParagraphsController;
 use Illuminate\Http\Request;
 use App\Models\Tiding;
 use Auth;
 use App\Models\User;
+use App\Models\Paragraph;
 
 class TidingsController extends Controller
 {
@@ -26,9 +26,20 @@ class TidingsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        return view('tidings.index')->with('tidings', Tiding::all());
+        $categori = Paragraph::all();
+        if ($id === 'all' || $id === ''){
+            return view('tidings.index')->with('tidings', Tiding::all());
+        }else{
+            $categori = Paragraph::all();
+            foreach ( $categori as $item){
+                if ($item->id == $id){
+                    return view('tidings.index')->with('tidings', Tiding::all()->where('paragraph_id', '===', $id));
+                }
+            }
+            return view('tidings.index')->with('tidings', Tiding::all());
+        }
     }
 
     /**
