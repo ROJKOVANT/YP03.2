@@ -410,3 +410,142 @@ button::placeholder {
 button:hover{
     background-color: #7850BA;
 }
+.error{
+    color: white;
+    margin-left: 31vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+@media screen and (max-width: 1645px) {
+
+    .left_block {
+        height: 60.6vw;
+    }
+}
+@media screen and (max-width: 1410px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+}
+@media screen and (max-width: 1261px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+    .right_block2 {
+        position: fixed;
+        right: 5px;
+        top: 350px;
+        width: 18vw;
+        height: 18vw;
+    }
+}
+@media screen and (max-width: 1035px) {
+    .left_block {
+        height: 90.6vw;
+    }
+    .right_block {
+        position: fixed;
+        right: 5px;
+        top: 110px;
+        width: 18vw;
+        height: 18vw;
+    }
+    .right_block2 {
+        position: fixed;
+        right: 5px;
+        top: 280px;
+        width: 18vw;
+        height: 18vw;
+    }
+    .icon_lenta {
+        margin-left: 2vw;
+        margin-top: 1.5vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .p_lenta {
+        margin-top: 0.8vw;
+        margin-left: 8vw;
+        color: #f3f7ff;
+        font-family: 'Fonts1';
+        font-size: 1.4vw;
+        font-weight: 100;
+    }
+    .text_lenta {
+        margin-top: 1vw;
+        margin-left: 2vw;
+        margin-right: 1vw;
+        color: #f3f7ff;
+        font-family: 'Fonts1';
+        font-size: 1.4vw;
+    }
+    button {
+        position: relative;
+        outline: none;
+        font-family: "Fonts1";
+        font-size: 1.4vw;
+        color: #f3f7ff;
+        background-color: #13192c;
+        border: 1px solid #7850ba;
+        width: 21vw;
+        height: 2vw;
+        padding-left: 1vw;
+        border-radius: 0.5vw;
+    }
+    .comments > p {
+        color: white;
+        font-size: 1.7vw;
+    }
+    .comments_1 > p {
+        color: white;
+        font-size: 1.7vw;
+        padding-bottom: 1vw;
+        border-bottom: 1px solid #7850ba;
+    }
+    .comments_1 > h4 {
+        color: white;
+        font-size: 1.7vw;
+        padding-bottom: 1vw;
+    }
+    label{
+        font-size: 1.7vw;
+    }
+    .nav_h1 {
+        margin-left: 1vw;
+        margin-right: 4.5vw;
+        text-decoration: none;
+        font-size: 2vw;
+        font-family: "Fonts1";
+        color: #f3f7ff;
+        font-weight: 100;
+    }
+    .nav_h2 {
+        margin-left: 1vw;
+        margin-top: 2vw;
+        text-decoration: none;
+        font-size: 1.8vw;
+        font-family: "Fonts1";
+        color: #f3f7ff;
+        font-weight: 100;
+    }
+    .nav_h3 {
+        margin-left: -2vw;
+        margin-top: 2vw;
+        text-decoration: none;
+        font-size: 1.8vw;
+        font-family: "Fonts1";
+        color: #f3f7ff;
+        font-weight: 100;
+    }
+    .nav_h4 {
+        margin-top: 14vw;
+        margin-left: -2vw;
+        text-decoration: none;
+        font-size: 1.8vw;
+        font-family: "Fonts1";
+        color: #f3f7ff;
+        font-weight: 100;
+    }
+}

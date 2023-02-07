@@ -53,10 +53,8 @@
         @endforeach
     </div>
 
-    @if(!$tidings)
-        <div class="div_lenta2">
-            <p class="p_lenta">Новостей нет</p>
-        </div>
+    @if(!$tidings->count())
+        <p class="error">Пока еще ничего не опубликовано! Станьте превым ♥</p>
     @else
         @foreach($tidings as $tiding)
             <div class="div_lenta2">

@@ -490,7 +490,7 @@ header {
     margin-top: -32vw;
     margin-left: 31vw;
     width: 32.8vw;
-    height: 12.2vw;
+    height: auto;
     background-color: #13192c;
     border: 1px solid #7850ba;
 }
@@ -576,7 +576,7 @@ header {
     background-color: #13192c;
     border: 1px solid #7850ba;
     width: 32.8vw;
-    height: 39vw;
+    height: auto;
 }
 
 .post_icon {
@@ -607,6 +607,7 @@ header {
 .title_p {
     margin-top: 1vw;
     margin-left: 2vw;
+    margin-right: 1vw;
     color: #f3f7ff;
     flex-direction: row;
     font-family: "Fonts1";
@@ -712,7 +713,255 @@ header {
     gap: 2vw;
     margin-left: 3vw;
     margin-top: 1vw;
+    padding-bottom: 1vw;
 }
 .otstuppp {
     height: 10vw;
+}
+@media screen and (max-width: 1645px) {
+
+    .left_block {
+        height: 60.6vw;
+    }
+}
+@media screen and (max-width: 1410px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+    .post_icon {
+        margin-top: 1.2vw;
+        margin-left: 1.4vw;
+        width: 4vw;
+        height: 4vw;
+    }
+    .post_h1 {
+        margin-top: -3vw;
+        margin-left: 6vw;
+        color: #f3f7ff;
+        font-family: "Fonts1";
+        font-size: 1.4vw;
+        font-weight: 100;
+    }
+    .post_p {
+        margin-top: 0.4vw;
+        margin-left: 6vw;
+        color: #f3f7ff;
+        flex-direction: row;
+        font-family: "Fonts1";
+        font-size: 1vw;
+        font-weight: 100;
+    }
+    .title_p {
+        margin-top: 1vw;
+        margin-left: 2vw;
+        margin-right: 1vw;
+        color: #f3f7ff;
+        flex-direction: row;
+        font-family: "Fonts1";
+        font-size: 1vw;
+        font-weight: 100;
+    }
+    .post_img {
+        margin-top: 1vw;
+        margin-left: 1.8vw;
+        border-radius: 25px;
+        width: 29vw;
+        height: 25vw;
+    }
+    .button_post {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width:auto;
+        height: auto;
+        padding: 0.6vw 6vw;
+        font-size: 1.1vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button_group {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 2vw;
+        height: 4vw;
+        padding: 0.6vw 6vw;
+        font-size: 1.1vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button_photo {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button_pokaz {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .right_block_friendly {
+        margin-left: 65.5vw;
+        border-radius: 2vw;
+        border: 1px solid #7850ba;
+        width: 32vw;
+        height: auto;
+        background-color: #13192c;
+        padding-bottom: 1vw;
+    }
+    .right_block_group {
+        margin-top: 16.5vw;
+        margin-left: 65.5vw;
+        border-radius: 2vw;
+        border: 1px solid #7850ba;
+        width: 32vw;
+        height:auto;
+        padding-bottom: 1vw;
+        background-color: #13192c;
+    }
+    .galereia {
+        border-radius: 1vw;
+        margin-top: -32vw;
+        margin-left: 31vw;
+        width: 32.8vw;
+        height: auto;
+        background-color: #13192c;
+        border: 1px solid #7850ba;
+        padding-bottom: 1vw;
+    }
+}
+@media screen and (max-width: 1261px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+    .title_p {
+        margin-top: 1vw;
+        margin-left: 2vw;
+        margin-right: 1vw;
+        color: #f3f7ff;
+        flex-direction: row;
+        font-family: "Fonts1";
+        font-size: 1.2vw;
+        font-weight: 100;
+    }
+    .button_photo {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1.2vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button_pokaz {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1.2vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    .button {
+        border-radius: 0.5vw;
+        color: black;
+        text-decoration: none;
+        color: #f3f7ff;
+        border: solid 0.1vw #7850ba;
+        background-color: #13192c;
+        width: 0.5vw;
+        height: 4vw;
+        padding: 0.2vw 3.4vw;
+        font-size: 1.2vw;
+        font-family: "Fonts1";
+        transition: 500ms ease-in-out;
+    }
+    @media screen and (max-width: 1035px){
+        .left_block {
+            height: 90.6vw;
+        }
+        .title_p {
+            margin-top: 1vw;
+            margin-left: 2vw;
+            margin-right: 1vw;
+            color: #f3f7ff;
+            flex-direction: row;
+            font-family: "Fonts1";
+            font-size: 1.3vw;
+            font-weight: 100;
+        }
+        .post_icon {
+            margin-top: 1.2vw;
+            margin-left: 1.4vw;
+            width: 4.2vw;
+            height: 4.2vw;
+        }
+        .post_h1 {
+            margin-top: -3vw;
+            margin-left: 6vw;
+            color: #f3f7ff;
+            font-family: "Fonts1";
+            font-size: 1.6vw;
+            font-weight: 100;
+        }
+        .post_p {
+            margin-top: 0.4vw;
+            margin-left: 6vw;
+            color: #f3f7ff;
+            flex-direction: row;
+            font-family: "Fonts1";
+            font-size: 1.2vw;
+            font-weight: 100;
+        }
+    }
 }

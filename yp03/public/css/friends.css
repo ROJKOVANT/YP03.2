@@ -307,3 +307,26 @@ input::placeholder {
 .col-2 > p{
     padding-top: 2vw;
 }
+@media screen and (max-width: 1645px) {
+
+    .left_block {
+        height: 60.6vw;
+    }
+}
+@media screen and (max-width: 1410px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+}
+@media screen and (max-width: 1261px) {
+
+    .left_block {
+        height: 80.6vw;
+    }
+}
+@media screen and (max-width: 1035px) {
+    .left_block {
+        height: 90.6vw;
+    }
+}
